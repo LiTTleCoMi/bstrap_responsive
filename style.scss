@@ -1,1 +1,17 @@
-@import 'colors.scss'
+@import 'colors.scss';
+* {
+    color: #efefef;
+}
+body {
+    min-height: 100vh;
+    background-color: #222;
+}
+h1 {
+    font-size: 80px;
+}
+.purple {
+    color: $purple;
+}
+.bg-purple {
+    background-color: $purple;
+}
