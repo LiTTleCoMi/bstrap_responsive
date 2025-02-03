@@ -2,8 +2,11 @@
 * {
     color: #efefef;
 }
+html {
+    height: 100%;
+}
 body {
-    min-height: 100vh;
+    height: 100%;
     background-color: #222;
 }
 h1 {
@@ -12,6 +15,41 @@ h1 {
 .purple {
     color: $purple;
 }
-.bg-purple {
+.learn-more {
+    width: fit-content;
     background-color: $purple;
+    border: none;
+}
+a {
+    color: #efefef;
+    text-decoration: none;
+}
+.content {
+    width: 85%;
+}
+@media (max-width: 768) {
+    .content {
+        width: 75%;
+    }
+}
+@media (max-width: 500px) {
+    h1 {
+        font-size: 60px;
+    }
+}
+@media (max-width: 350px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+footer {
+    height: 100%;
+    background-color: #ddd;
+}
+footer a {
+    color: black;
+    font-size: 20px;
+}
+.container-fluid {
+    flex-grow: 1;
 }
